@@ -46,8 +46,8 @@
  </ol></li>
  <li><p>Configure account directories for Odoo<br />
 ```
-cd /home/odoo9a<br />
-mkdir bin.odoo<br />
+cd /home/odoo9a
+mkdir bin.odoo
 mkdir opt<br />
 mkdir etc<br />
 mkdir etc/init.d<br />
