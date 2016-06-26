@@ -78,12 +78,18 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts
 
  </li>
  </ol></li>
- <li><p>Add the following variables</p>
-
- <ol ><li><p>OE_DIR_ETC="/home/$OE_USER/etc"</p>
+ <li><p>Update references to /etc</p>
+ <ol>
+ <li><p>Add the following variables</p><br />
+<p>OE_DIR_ETC="/home/$OE_USER/etc"</p></li>
 
  </li>
- </ol></li>
+  <li><p>In the section "Configure ODOO" change all references <br />
+ from " /etc" <br />
+ to " $OE_DIR_ETC"<br />
+ Note both strings begin with a space
+ </p> </li>
+</ol></li>
  <li><p>Comment out the following sections of the script</p>
 
  <ol ><li><p>PostgreSQL x.y Settings</p>
@@ -96,11 +102,6 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts
 
  </li>
  </ol></li>
- <li><p>In the section "Configure ODOO" change all references <br />
- from " /etc" <br />
- to " $OE_DIR_ETC"<br />
- Note both strings begin with a space
- </p> </li>
  </ol></li>
  <li><p>(optional) Create a wrapper script<br />
 <pre>
