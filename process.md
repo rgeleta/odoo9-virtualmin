@@ -45,13 +45,13 @@
  </ol></li>
  </ol></li>
  <li><p>Configure account directories for Odoo<br />
- &lt;code&gt;<br />
- cd /home/odoo9a<br />
+```
+cd /home/odoo9a<br />
 mkdir bin.odoo<br />
 mkdir opt<br />
 mkdir etc<br />
 mkdir etc/init.d<br />
- &lt;/code&gt;</p>
+```
 
  </li>
  <li><p>Get an Odoo installation scripts<br />
@@ -100,7 +100,7 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts <br />
  </li>
  </ol></li>
  <li><p>(optional) Create a wrapper script<br />
- &lt;code&gt;<br />
+```
  #/bin/bash <br />
  #<br />
  # set bash option to show commands being run <br />
@@ -110,7 +110,7 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts <br />
 sudo bash ./odoo9-install.sh 2&gt;&amp;1 | tee `pwd`/odoo9-install.log <br />
  #<br />
  # done <br />
- &lt;/code&gt;</p>
+```</p>
 
  </li>
  <li><p>Run Odoo installation script (either optional wrapper script or main script)</p>
