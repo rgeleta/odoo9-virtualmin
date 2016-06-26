@@ -47,18 +47,18 @@
  <li><p>Configure account directories for Odoo<br />
 
 <pre>
-cd /home/odoo9a<br />
-mkdir bin.odoo<br />
-mkdir opt<br />
-mkdir etc<br />
-mkdir etc/init.d<br />
+cd /home/odoo9a
+mkdir bin.odoo
+mkdir opt
+mkdir etc
+mkdir etc/init.d
 </pre>
 
  </li>
  <li><p>Get an Odoo installation scripts<br />
 <pre>
 git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts 
-</pre><br />
+</pre>
  is a good place to start</p>
 
  </li>
@@ -104,15 +104,15 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts
  </ol></li>
  <li><p>(optional) Create a wrapper script<br />
 <pre>
- #/bin/bash <br />
- #<br />
- # set bash option to show commands being run <br />
- set +x <br />
- # <br />
- # run install script <br />
-sudo bash ./odoo9-install.sh 2&gt;&amp;1 | tee `pwd`/odoo9-install.log <br />
- #<br />
- # done <br />
+ #/bin/bash 
+ #
+ # set bash option to show commands being run
+ set +x
+ #
+ # run install script
+sudo bash ./odoo9-install.sh 2&gt;&amp;1 | tee `pwd`/odoo9-install.log 
+ #
+ # done
 </pre></p>
 
  </li>
@@ -122,16 +122,18 @@ sudo bash ./odoo9-install.sh 2&gt;&amp;1 | tee `pwd`/odoo9-install.log <br />
  <li><p>Create links in /etc and /etc/init.d to point to scripts in /home/odoo9/etc<br />
  as root<br />
 <pre>
-cd /etc<br />
-ln -s /home/odoo9a/etc/init.d/odoo9a-server /etc/init.d/odoo9a-server<br />
-ln -s /home/odoo9a/etc/odoo9a-server.conf /etc/odoo9a-server.conf<br />
+cd /etc
+ln -s /home/odoo9a/etc/init.d/odoo9a-server /etc/init.d/odoo9a-server
+ln -s /home/odoo9a/etc/odoo9a-server.conf /etc/odoo9a-server.conf
 </pre>
 </p>
 
  </li>
  <li><p>Start Odoo<br />
- as root<br />
- service odoo9a-server start</p>
+ as root
+ <pre>
+ service odoo9a-server start
+ </pre></p>
 
  </li>
  <li><p>Using Virtualmin, open port 8069</p>
