@@ -45,6 +45,7 @@
  </ol></li>
  </ol></li>
  <li><p>Configure account directories for Odoo<br />
+
 <pre>
 cd /home/odoo9a<br />
 mkdir bin.odoo<br />
@@ -52,9 +53,12 @@ mkdir opt<br />
 mkdir etc<br />
 mkdir etc/init.d<br />
 </pre>
+
  </li>
  <li><p>Get an Odoo installation scripts<br />
-git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts <br />
+<pre>
+git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts 
+</pre><br />
  is a good place to start</p>
 
  </li>
@@ -99,7 +103,7 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts <br />
  </li>
  </ol></li>
  <li><p>(optional) Create a wrapper script<br />
-```
+<pre>
  #/bin/bash <br />
  #<br />
  # set bash option to show commands being run <br />
@@ -109,7 +113,7 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts <br />
 sudo bash ./odoo9-install.sh 2&gt;&amp;1 | tee `pwd`/odoo9-install.log <br />
  #<br />
  # done <br />
-```</p>
+</pre></p>
 
  </li>
  <li><p>Run Odoo installation script (either optional wrapper script or main script)</p>
@@ -117,11 +121,12 @@ sudo bash ./odoo9-install.sh 2&gt;&amp;1 | tee `pwd`/odoo9-install.log <br />
  </li>
  <li><p>Create links in /etc and /etc/init.d to point to scripts in /home/odoo9/etc<br />
  as root<br />
- &lt;code&gt;<br />
- cd /etc<br />
+<pre>
+cd /etc<br />
 ln -s /home/odoo9a/etc/init.d/odoo9a-server /etc/init.d/odoo9a-server<br />
 ln -s /home/odoo9a/etc/odoo9a-server.conf /etc/odoo9a-server.conf<br />
- &lt;/code&gt;</p>
+</pre>
+</p>
 
  </li>
  <li><p>Start Odoo<br />
