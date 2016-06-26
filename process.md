@@ -90,17 +90,13 @@ OE_DIR_ETC="/home/$OE_USER/etc"</p></li>
  Note both strings begin with a space
  </p> </li>
 </ol></li>
- <li><p>Comment out the following sections of the script</p>
+ <li><p>Comment out the following sections of the script<br />
+ (these have already done by Virtualmin)</p>
 
- <ol ><li><p>PostgreSQL x.y Settings</p>
-
- </li>
- <li><p>Creating the ODOO PostgreSQL User</p>
-
- </li>
- <li><p>Create ODOO system user</p>
-
- </li>
+ <ol >
+ <li><p>PostgreSQL x.y Settings</p></li>
+ <li><p>Creating the ODOO PostgreSQL User</p></li>
+ <li><p>Create ODOO system user</p></li>
  </ol></li>
  </ol></li>
  <li><p>(optional) Create a wrapper script<br />
