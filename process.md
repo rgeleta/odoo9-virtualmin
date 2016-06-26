@@ -45,14 +45,13 @@
  </ol></li>
  </ol></li>
  <li><p>Configure account directories for Odoo<br />
-```
-cd /home/odoo9a
-mkdir bin.odoo
+<pre>
+cd /home/odoo9a<br />
+mkdir bin.odoo<br />
 mkdir opt<br />
 mkdir etc<br />
 mkdir etc/init.d<br />
-```
-
+</pre>
  </li>
  <li><p>Get an Odoo installation scripts<br />
 git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts <br />
