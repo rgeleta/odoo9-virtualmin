@@ -80,8 +80,8 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts
  </ol></li>
  <li><p>Update references to /etc</p>
  <ol>
- <li><p>Add the following variables</p><br />
-<p>OE_DIR_ETC="/home/$OE_USER/etc"</p></li>
+ <li><p>Add the following variables<br />
+OE_DIR_ETC="/home/$OE_USER/etc"</p></li>
 
  </li>
   <li><p>In the section "Configure ODOO" change all references <br />
