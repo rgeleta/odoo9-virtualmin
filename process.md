@@ -55,7 +55,7 @@ mkdir etc/init.d
 </pre>
 
  </li>
- <li><p>Get an Odoo installation scripts<br />
+ <li><p>Get an Odoo installation script<br />
 <pre>
 git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts 
 </pre>
