@@ -98,9 +98,9 @@ git clone https://github.com/aschenkels-ictstudio/odoo-install-scripts
  </ol></li>
  <li><p>In the section "Configure ODOO" change all references <br />
  from " /etc" <br />
- to " $OE_DIR_ETC"</p>
-
- </li>
+ to " $OE_DIR_ETC"<br />
+ Note both strings begin with a space
+ </p> </li>
  </ol></li>
  <li><p>(optional) Create a wrapper script<br />
 <pre>
